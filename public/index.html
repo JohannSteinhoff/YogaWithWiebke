@@ -6,6 +6,7 @@
   <title>Yoga with Wiebke — Exploring Movement and Breath</title>
   <meta name="description" content="Yoga with Wiebke — careful, friendly, inclusive online and in-person yoga classes in North Kingston. Exploring movement and breath." />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preload" as="image" href="assets/img/coast-sunset.jpg" fetchpriority="high" />
   <meta property="og:title" content="Yoga with Wiebke — Exploring Movement and Breath" />
   <meta property="og:description" content="Careful, friendly and inclusive online and in-person yoga classes in North Kingston." />
   <meta property="og:type" content="website" />
@@ -41,7 +42,7 @@
   <!-- Hero -->
   <section class="hero">
     <div class="hero-media">
-      <img src="assets/img/coast-sunset.jpg" alt="Calm sea at dusk along a wild coastline" />
+      <img src="assets/img/coast-sunset.jpg" alt="Calm sea at dusk along a wild coastline" fetchpriority="high" />
       <div class="hero-overlay"></div>
     </div>
     <div class="hero-content container">
@@ -59,8 +60,11 @@
   <section class="quote-band">
     <div class="container">
       <blockquote>
-        “It is precisely in this understanding of the inevitability of change that the
-        meaning of yoga enters our life and beckons towards happiness.”
+        “And yet it is precisely in this understanding of the inevitability of change that
+        the meaning of yoga enters our life and beckons towards happiness. … This is the
+        ancient meaning of yoga: to move from one situation to another; to understand what
+        I have not understood; to gain what I lack.”
+        <cite>TKV Desikachar · <span>Health, Healing and Beyond</span></cite>
       </blockquote>
     </div>
   </section>
@@ -86,7 +90,7 @@
             <ul>
               <li><span>2017–2020</span> BWYQ L4 Diploma in Teaching Yoga, with Laura Le Feuvre (500+ h)</li>
               <li><span>2023–2026</span> Yoga Therapy Training with TSYP (700 h Yoga Therapy Diploma)</li>
-              <li><span>2021–2024</span> The Yoga Sutras, Chapters One–Four · Sadhana Mala Yoga Training (Ranju Roy &amp; Dave Charlton)</li>
+              <li><span>2021–2024</span> The Yoga Sutras, Chapters One–Four · Sadhana Mala Yoga Training (Ranju Roy &amp; Dave Charlton, 135 h)</li>
               <li><span>2021–2022</span> Vedic Chanting Foundation Course (60 h)</li>
               <li><span>2022</span> Restorative Yoga · Anna Ashby, Triyoga (33 h)</li>
               <li><span>2022</span> Yoga for People with Cancer · Vicky Fox, Triyoga (40 h)</li>
@@ -115,7 +119,7 @@
       <div class="section-head">
         <p class="eyebrow">My goal</p>
         <h2>Calm, joyful and inclusive sessions</h2>
-        <p class="lead">Classes are themed and vary from week to week, aligned with the seasons and the currents we are all affected by. My main goal is that you work within your ever-changing limits — physically, energetically and psychologically.</p>
+        <p class="lead">Classes are themed and vary from week to week, aligned with the seasons and the currents we are all affected by — you can usually find the current season’s theme in the <a href="#classes">classes below</a>. My main goal is that you work within your ever-changing limits — physically, energetically and psychologically.</p>
       </div>
       <div class="cards-3">
         <article class="card">
@@ -138,8 +142,8 @@
   </section>
 
   <!-- Decorative seasonal band -->
-  <section class="image-band" aria-hidden="true">
-    <img src="assets/img/succulents.jpg" alt="" loading="lazy" />
+  <section class="image-band">
+    <img src="assets/img/succulents.jpg" alt="A dense cluster of green succulent rosettes" loading="lazy" />
     <div class="image-band-overlay"><p>Growing, quietly, season by season.</p></div>
   </section>
 
@@ -173,6 +177,7 @@
             <span class="class-day">Monday</span>
             <span class="class-mode mode-online">Online · Zoom</span>
             <h3>Going Deeper</h3>
+            <p class="class-sub">An hour of practice and contemplation</p>
             <p>6:45–7:45pm (60 min). A guided class for students with some yoga experience. Each week we work with a theme to explore certain aspects of yoga practice more deeply. Modifications are offered, and students are encouraged to work within themselves and with the energy and abilities they bring to that particular class.</p>
             <p class="class-price">£7 <span>per class</span></p>
           </div>
@@ -183,7 +188,7 @@
             <span class="class-day">Tuesday</span>
             <span class="class-mode mode-person">In person · Home studio</span>
             <h3>Beginners’ Course</h3>
-            <p>8:30–9:30am · a 6-week course in my small home studio in North Kingston, for 3–4 students. In this course you will:</p>
+            <p>8:30–9:30am · a 6-week course (14 April – 19 May 2026) in my small home studio in North Kingston, for 3–4 students. In this course you will:</p>
             <ul class="ticks">
               <li>Get a basic introduction on how to use your breath most effectively in movement</li>
               <li>Familiarise yourself with the most well-known yoga postures</li>
@@ -209,16 +214,16 @@
       </div>
 
       <div class="panel panel-wide term-dates">
-        <p class="panel-label">Term dates · Spring to Summer 2026</p>
+        <p class="panel-label" id="term-dates-label">Term dates · Spring to Summer 2026</p>
         <div class="table-scroll">
-          <table>
+          <table aria-labelledby="term-dates-label">
             <thead>
-              <tr><th>Day</th><th>April</th><th>May</th><th>June</th><th>July</th><th>Classes</th><th>Cost</th></tr>
+              <tr><th scope="col">Day</th><th scope="col">April</th><th scope="col">May</th><th scope="col">June</th><th scope="col">July</th><th scope="col">Classes</th><th scope="col">Cost</th></tr>
             </thead>
             <tbody>
-              <tr><th>Monday</th><td>13, 20, 27</td><td>11, 18</td><td>1, 8, 15, 22, 29</td><td>6, 13</td><td>12</td><td>£84</td></tr>
-              <tr><th>Tuesday</th><td>14, 21, 28</td><td>5, 12, 19</td><td>—</td><td>—</td><td>6</td><td>£72</td></tr>
-              <tr><th>Wednesday</th><td>15, 22, 29</td><td>6, 13, 20</td><td>3, 10, 17, 24</td><td>1, 8, 15</td><td>13</td><td>£156</td></tr>
+              <tr><th scope="row">Monday</th><td>13, 20, 27</td><td>11, 18</td><td>1, 8, 15, 22, 29</td><td>6, 13</td><td>12</td><td>£84</td></tr>
+              <tr><th scope="row">Tuesday</th><td>14, 21, 28</td><td>5, 12, 19</td><td>—</td><td>—</td><td>6</td><td>£72</td></tr>
+              <tr><th scope="row">Wednesday</th><td>15, 22, 29</td><td>6, 13, 20</td><td>3, 10, 17, 24</td><td>1, 8, 15</td><td>13</td><td>£156</td></tr>
             </tbody>
           </table>
         </div>
@@ -229,28 +234,25 @@
 
   <!-- Going deeper -->
   <section class="section section-deep" id="deeper">
-    <div class="container split">
-      <div class="split-text">
-        <p class="eyebrow">Going Deeper</p>
-        <h2>Quarterly workshops in yoga philosophy</h2>
-        <p>‘Going Deeper’ are quarterly workshops that engage with the explanations and suggestions of the Yoga Sutras, the seminal text on yoga philosophy. Each usually comprises some chanting, an hour of practice, a lengthy tea break and an hour of discussion.</p>
-        <p>These workshops have arisen out of my study with Ranju Roy and Dave Charlton, whose monthly classes on yoga philosophy I have attended over the last five years. They have co-authored a book called <em>‘Embodying the Yoga Sutra’</em>.</p>
-        <p class="class-note">Saturday afternoons, 3–5:30pm, in my home · £25 per person.</p>
-        <a class="link-arrow" href="#contact">Let me know if you’d like to attend →</a>
-      </div>
-      <div class="split-media">
-        <img src="assets/img/candle-stone.jpg" alt="A candle and white blossom resting on stone beside still water" loading="lazy" />
-      </div>
+    <div class="container narrow center">
+      <p class="eyebrow">Going Deeper</p>
+      <h2>Quarterly workshops in yoga philosophy</h2>
+      <p>‘Going Deeper’ are quarterly workshops that engage with the explanations and suggestions of the Yoga Sutras, the seminal text on yoga philosophy. Each usually comprises some chanting, an hour of practice, a lengthy tea break and an hour of discussion.</p>
+      <p>These workshops have arisen out of my study with Ranju Roy and Dave Charlton, whose monthly classes on yoga philosophy I have attended over the last five years. They have co-authored a book called <em>‘Embodying the Yoga Sutra’</em>.</p>
+      <p class="class-note">Saturday afternoons, 3–5:30pm, in my home · £25 per person.</p>
     </div>
     <div class="container">
       <div class="panel panel-wide" style="margin-top: clamp(2rem, 4vw, 3rem);">
-        <p class="panel-label">Workshop dates for 2026</p>
+        <p class="panel-label">Remaining workshops for 2026</p>
         <ul class="dates-list dates-row">
           <li><span class="date">4 July</span> The notion of self and one’s own true nature</li>
           <li><span class="date">26 Sept</span> What is the mind?</li>
           <li><span class="date">21 Nov</span> The five obstacles of the mind</li>
         </ul>
       </div>
+    </div>
+    <div class="container center" style="margin-top: clamp(1.6rem, 3vw, 2.4rem);">
+      <a class="btn btn-primary" href="#contact">Let me know if you’d like to attend</a>
     </div>
   </section>
 
@@ -292,8 +294,10 @@
       </div>
       <nav class="footer-nav">
         <a href="#about">About</a>
+        <a href="#objectives">Objectives</a>
         <a href="#classes">Classes</a>
         <a href="#deeper">Going Deeper</a>
+        <a href="#oneonone">1:1</a>
         <a href="#contact">Contact</a>
       </nav>
       <p class="copyright">© <span id="year"></span> Yoga with Wiebke · North Kingston</p>
