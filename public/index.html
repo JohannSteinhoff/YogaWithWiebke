@@ -280,7 +280,7 @@
       <p class="eyebrow">Contact</p>
       <h2>I’m glad to hear from you</h2>
       <p class="lead">You can reach me by email — I usually check daily and will come back to you as soon as I can.</p>
-      <a class="btn btn-primary" href="mailto:wiebkeyoga@gmail.com">wiebkeyoga@gmail.com</a>
+      <a class="btn btn-primary" href="mailto:wiebkeyoga@gmail.com" data-email-trigger>wiebkeyoga@gmail.com</a>
       <p class="contact-soon">A booking &amp; enquiry form is coming soon.</p>
     </div>
   </section>
@@ -291,6 +291,7 @@
       <div>
         <span class="brand-name">Yoga with Wiebke</span>
         <p class="brand-tag">Exploring Movement &amp; Breath</p>
+        <a class="footer-email" href="mailto:wiebkeyoga@gmail.com" data-email-trigger>wiebkeyoga@gmail.com</a>
       </div>
       <nav class="footer-nav">
         <a href="#about">About</a>
@@ -303,6 +304,21 @@
       <p class="copyright">© <span id="year"></span> Yoga with Wiebke · North Kingston</p>
     </div>
   </footer>
+
+  <!-- Email chooser modal -->
+  <div class="email-modal" id="emailModal" hidden>
+    <div class="email-modal__backdrop" data-close></div>
+    <div class="email-modal__card" role="dialog" aria-modal="true" aria-labelledby="emailModalTitle">
+      <button class="email-modal__close" type="button" aria-label="Close" data-close>&times;</button>
+      <p class="eyebrow">Get in touch</p>
+      <h3 id="emailModalTitle">Email Wiebke</h3>
+      <p class="email-modal__address">wiebkeyoga@gmail.com</p>
+      <div class="email-modal__actions">
+        <a class="btn btn-primary" href="mailto:wiebkeyoga@gmail.com">Open email app</a>
+        <button class="btn btn-outline" type="button" data-copy="wiebkeyoga@gmail.com">Copy address</button>
+      </div>
+    </div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
