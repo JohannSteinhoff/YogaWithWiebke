@@ -164,6 +164,12 @@ p { margin: 0 0 1.1rem; }
   font-weight: 600; font-size: .82rem; color: var(--sky-deep);
   white-space: nowrap; padding-top: .07rem; letter-spacing: .01em;
 }
+.quals-logos {
+  display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+  gap: clamp(1.2rem, 3vw, 2.4rem); margin-top: 1.8rem;
+  padding-top: 1.8rem; border-top: 1px solid rgba(58,57,47,.1);
+}
+.quals-logos img { height: 56px; width: auto; }
 
 /* 3 cards */
 .cards-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
