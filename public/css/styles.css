@@ -294,6 +294,21 @@ p { margin: 0 0 1.1rem; }
 .contact-inner .lead { margin: 0 auto 1.8rem; }
 .contact-soon { margin-top: 1.2rem; font-size: .9rem; color: var(--muted); font-style: italic; }
 
+/* Location map */
+.map-embed {
+  display: block; width: 100%; height: clamp(300px, 40vw, 440px);
+  border: 0; border-radius: var(--radius); box-shadow: var(--shadow);
+}
+
+/* Accreditation logos */
+.accred { background: var(--white); padding: clamp(2.5rem, 5vw, 4rem) 0; }
+.accred-logos {
+  display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+  gap: clamp(1.5rem, 4vw, 3rem); margin: 1.6rem 0;
+}
+.accred-logos img { height: 76px; width: auto; }
+.accred-note { max-width: 62ch; margin: 0 auto; font-size: .9rem; color: var(--muted); }
+
 /* Footer */
 .site-footer { background: var(--ink); color: var(--cream); padding: 3rem 0; }
 .footer-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem; }
