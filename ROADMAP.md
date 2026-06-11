@@ -1,9 +1,13 @@
 # Yoga with Wiebke — Project Roadmap & Ideas
 
 A redesign of [yogawithwiebke.com](https://yogawithwiebke.com/) for my aunt Wiebke.
-Goal: keep her existing content and gentle "vibe", modernise the design, make it
-**dynamic**, and host on **Firebase** so she can manage content and collect input
-from students.
+Goal: keep her existing content and gentle "vibe", modernise the design, and host
+on **Firebase**.
+
+> **Decision (Wiebke, June 2026): keep it a static site.** No interactive
+> feedback submission (she'll curate written feedback herself, sentences not
+> stars) and no signup counters. She'd like to try making content edits herself;
+> Dirk may help with hosting. Static = plain HTML/CSS/JS, works on any host.
 
 > We're building this **step by step** so decisions can be made along the way.
 > This file is the running list of agreed scope + future ideas. Nothing here is
@@ -55,10 +59,12 @@ avoid a copyright issue — replace with one of her own photos if she wants an i
 These were brainstormed up front — **not all needed yet**, listed so we don't
 lose them. We'll pull them in one at a time.
 
-### User reviews / testimonials
-- Students submit reviews; displayed on site.
-- Needs moderation (Wiebke approves before publishing) to avoid spam.
-- Store in Firestore; spam protection (reCAPTCHA / App Check).
+### ~~User reviews / testimonials~~ → static "Kind words" section (decided June 2026)
+- Wiebke doesn't want interactive submission — she'll collect feedback herself
+  and we publish it as static text (sentence form, no star ratings).
+- [x] Placeholder "Kind words" section added to the draft — Wiebke to supply
+      the real quotes.
+- ~~Store in Firestore; moderation; reCAPTCHA~~ — not needed.
 
 ### Contact / booking form
 - Form so people can enquire or request a class booking without opening email.
@@ -68,7 +74,8 @@ lose them. We'll pull them in one at a time.
 ### Class schedule (dynamic)
 - Editable schedule of classes & dates (replaces the static "Yoga Dates" image).
 - Wiebke can update times, dates, availability ("course full") herself.
-- Could show term dates, costs, "spaces left".
+- ~~Could show term dates, costs, "spaces left"~~ — **no signup counts**
+  (decided June 2026); plain term dates + costs only.
 
 ### Admin / edit access
 - Simple login for Wiebke to: approve reviews, edit schedule, edit page text.

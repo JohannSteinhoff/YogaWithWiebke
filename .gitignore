@@ -16,3 +16,4 @@ preview-*.png
 
 # Original site is reference only — keep locally, don't deploy/commit
 old-site/
+old-site-prev/
